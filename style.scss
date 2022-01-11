@@ -1,0 +1,167 @@
+@import "./mixin.scss";
+@import "./variables.scss";
+
+@font-face{
+    font-family: Shrikhand;
+    src: url("./fonts/Shrikhand");
+}
+
+body{
+    font-family: Roboto;
+    src: url(./fonts/Roboto);
+}
+
+#div-logo{
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+#logo{
+    width: 10rem;
+}
+
+#locate{
+    @include flex-ctr;
+}
+
+
+#map-container{
+    @include flex-ctr;
+    background-color: #e2e2e2;
+    padding-left: 5vw;
+    border-top: 3px solid #cccc;
+}
+
+
+.btn{
+    @include flex-ctr;
+}
+
+#map-marker{
+    height: 5vh;
+}
+
+.fa-map-marker-alt{
+    margin-top: 0.7em;
+    margin-left: 14vw;
+    margin-right: 4vw;
+}
+
+.first--btn{
+    border: none;
+    background-color: #e2e2e2;
+}
+
+
+#explore{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #F2F2F2;
+    padding-bottom: 5vh;
+}
+
+#order{
+    width: 65%;
+}
+
+#explore-description{
+    opacity: 0.6;
+}
+
+.second--btn{
+    @include button;
+    margin-top: 1.5rem;
+    background: linear-gradient(180deg,#FF79DA,#9356DC);
+    color: white;
+}
+
+
+#menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 4rem;
+}
+
+#menu :hover{
+    background-color: #eee5fa;
+}
+
+#menu-title{
+    margin-left: 20px;
+    margin-top: 3.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.fx-compose{
+    margin-right: 0.8rem;
+}
+.btn-fonction{
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    border-style: none;
+    box-shadow: 2px 2px 6px #c9c9c9;
+    font-weight: bold;
+    text-decoration: none;
+    background-color:#F2F2F2;
+    padding: 1rem;
+    width: 15rem;
+    justify-content: space-evenly;
+    margin-bottom: 1.5rem;
+}
+
+.fonction-number{
+    margin-left: -2.8rem;
+    color: white;
+    background-color: #9356DC;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fonction-icon{
+    color: grey;
+}
+
+.fx-btn{
+    color: black;
+    opacity: 0.8;
+}
+
+.fa-store{
+    color: #9356DC;
+}
+
+#restaurants{
+    background-color: #F2F2F2;
+    padding-top: 2.5rem;
+}
+
+#restaurants-title{
+    margin-left: 20px;
+}
+
+.div-restaurant{
+    @include flex-ctr;
+    flex-direction: column;
+    align-content: center;
+    background-color: rgb(136, 240, 217);
+    height: 12.8rem;
+    width: 20rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+
+.picture{
+    @include picture-size;
+}
+    
