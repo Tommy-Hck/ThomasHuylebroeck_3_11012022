@@ -2,121 +2,130 @@
 
 <html lang="fr">
 
-    <head>
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="http://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
-        <link href="http://fonts.cdnfonts.com/css/shrikhand" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/0a06104276.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="./dist/style.css">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/shrikhand" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0a06104276.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./dist/style.css">
 
-        
 
-        
-        <title>Oh my food</title>
 
-    </head>
 
-    <body>
+    <title>Oh my food</title>
 
-        <header>
-            <div id="div-logo">
-                <img id="logo" src="./logo/ohmyfood.png" alt="logo">
+</head>
+
+<body>
+
+    <header>
+        <div id="div-logo">
+            <img id="logo" src="./logo/ohmyfood.png" alt="logo">
+        </div>
+    </header>
+
+    <div id="map-container">
+        <div id="map-marker">
+            <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <div id="locate">
+            <input class="btn first--btn" type="search" name="location" value="Paris, Belleville">
+        </div>
+    </div>
+
+    <main id="container">
+
+        <div id="explore">
+            <h2 id="order">Réservez le menu qui vous convient</h2>
+            <div>
+                <span id="explore-description">Découvrez des restaurants d'exception,<br> séléctionnés par nos
+                    soins</span>
             </div>
-        </header>
-
-        <div id="map-container">
-            <div id="map-marker">
-                <i class="fas fa-map-marker-alt"></i>
-            </div>
-            <div id="locate">
-                <input class="btn first--btn" type="search" name="location" value="Paris, Belleville">
+            <div>
+                <input class="btn second--btn" type="button" name="explore" value="Explorer nos restaurants">
             </div>
         </div>
 
-        <main id="container">
+        <h2 id="menu-title">Fonctionnement</h2>
+        <nav id="menu">
 
-            <div id="explore">
-                    <h2 id="order">Réservez le menu qui vous convient</h2>
-                        <div>
-                            <span id="explore-description">Découvrez des restaurants d'exception,<br> séléctionnés par nos soins</span>
-                        </div>
-                        <div>
-                            <input class="btn second--btn" type="button" name="explore" value="Explorer nos restaurants">
-                        </div>
+            <a href="#" class="btn-fonction">
+                <span class="fonction-number">1</span>
+                <span class="fonction-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </span>
+                <span class="menu-choice fx-btn">Choisissez un restaurant</span>
+            </a>
+
+            <a href="#" class="btn-fonction">
+                <span class="fonction-number">2</span>
+                <span class="fonction-icon">
+                    <i class="fas fa-list-ul"></i>
+                </span>
+                <span class="fx-compose fx-btn">Composez votre menu</span>
+            </a>
+
+
+            <a href="#" class="btn-fonction">
+                <span class="fonction-number">3</span>
+                <span class="fonction-icon">
+                    <i class="fas fa-store"></i>
+                </span>
+                <span class="fx-btn">Dégustez au restaurant</span>
+            </a>
+        </nav>
+
+        <section id="main-restaurants">
+            <h2 id="restaurants-title">Restaurants</h2>
+            <div id="container-restaurants">
+                <div class="div-restaurant">
+                    <div class="picture-div"><img class="picture" src="./images-accueil/1.jpg"
+                            alt="plat du restaurant la palette du gout"></div>
+                    <span>La palette du goût</span>
+                    <span>Ménilmontant</span>
+                    <span>
+                        <i class="far fa-heart"></i>
+                    </span>
+                </div>
+                <div class="div-restaurant">
+                    <div class="picture-div"><img class="picture" src="./images-accueil/2.jpg"
+                            alt="plat du restaurant la note enchantee"></div>
+                    <span>La note enchantée</span>
+                    <span>Charonne</span>
+                    <span>
+                        <i class="far fa-heart"></i>
+                    </span>
+
+                </div>
+                <div class="div-restaurant">
+                    <div class="picture-div"><img class="picture" src="./images-accueil/3.jpg"
+                            alt="plat du restaurant a la francaise"></div>
+                    <span>À la française</span>
+                    <span>Cité rouge</span>
+                    <span>
+                        <i class="far fa-heart"></i>
+                    </span>
+                </div>
+                <div class="div-restaurant">
+                    <div class="picture-div"><img class="picture" src="./images-accueil/4.jpg"
+                            alt="plat du restaurant le delice des sens"></div>
+                    <span>Le délice des sens</span>
+                    <span>Folie-Méricourt</span>
+                    <span>
+                        <i class="far fa-heart"></i>
+                    </span>
+                </div>
             </div>
-
-            <h2 id="menu-title">Fonctionnement</h2>
-            <nav id="menu">
-
-                    <a href="#" class="btn-fonction">
-                        <span class="fonction-number">1</span>
-                        <span class="fonction-icon">
-                            <i class="fas fa-mobile-alt"></i>
-                        </span>
-                        <span class="menu-choice fx-btn">Choisissez un restaurant</span> 
-                    </a>
-
-                    <a href="#" class="btn-fonction">
-                        <span class="fonction-number">2</span>
-                        <span class="fonction-icon">
-                            <i class="fas fa-list-ul"></i>
-                        </span>
-                        <span class="fx-compose fx-btn">Composez votre menu</span>
-                    </a>
-
-                    
-                    <a href="#" class="btn-fonction">
-                        <span class="fonction-number">3</span>
-                        <span class="fonction-icon">
-                            <i class="fas fa-store"></i>
-                        </span>
-                        <span class="fx-btn">Dégustez au restaurant</span>
-                    </a>
-                </nav>
-
-            <section id="restaurants">
-                <h2 id="restaurants-title">Restaurants</h2>
-                    <div class="div-restaurant">
-                        <div class="picture-div"><img class="picture" src="./images-accueil/1.jpg" alt="palette"></div> 
-                        <span>La palette du goût</span>
-                        <span>Ménilmontant</span>
-                        <span>
-                            <i class="far fa-heart"></i>
-                        </span>
-                    </div>
-                        <div class="div-restaurant">
-                            <div class="picture-div"><img class="picture" src="./images-accueil/2.jpg" alt="note"></div> 
-                            <span>La note enchantée</span>
-                            <span>Charonne</span>
-                            <span>
-                                <i class="far fa-heart"></i>
-                            </span>
-                            
-                        </div>
-                            <div class="div-restaurant">
-                                <div class="picture-div"><img class="picture" src="./images-accueil/3.jpg" alt="francaise"></div> 
-                                <span>À la française</span>
-                                <span>Cité rouge</span>
-                                <span>
-                                    <i class="far fa-heart"></i>
-                                </span>
-                            </div>
-                                <div class="div-restaurant">
-                                    <div class="picture-div"><img class="picture" src="./images-accueil/4.jpg" alt="picture"></div> 
-                                    <span>Le délice des sens</span>
-                                    <span>Folie-Méricourt</span>
-                                    <span>
-                                        <i class="far fa-heart"></i>
-                                    </span>
-                                </div>
-            </section>
-        </main>
+        </section>
+    </main>
 
 
 
-    </body>
+</body>
 
 
 

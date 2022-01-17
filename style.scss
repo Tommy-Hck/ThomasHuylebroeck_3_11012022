@@ -118,7 +118,7 @@ body{
 .fonction-number{
     margin-left: -2.8rem;
     color: white;
-    background-color: #9356DC;
+    background-color: $primary;
     width: 1.2rem;
     height: 1.2rem;
     border-radius: 100%;
@@ -140,9 +140,15 @@ body{
     color: #9356DC;
 }
 
-#restaurants{
+#main-restaurants{
     background-color: #F2F2F2;
     padding-top: 2.5rem;
+}
+
+#container-restaurants{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #restaurants-title{
@@ -153,8 +159,8 @@ body{
     @include flex-ctr;
     flex-direction: column;
     align-content: center;
-    background-color: rgb(136, 240, 217);
-    height: 12.8rem;
+    background-color: white;
+    height: 12.6rem;
     width: 20rem;
     border-radius: 10px;
     margin-bottom: 2rem;
