@@ -177,3 +177,36 @@ body {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
+
+.restaurant-title {
+  font-weight: bold;
+}
+
+.restaurant-title-container {
+  width: 90%;
+}
+
+.title-container {
+  padding: 1em;
+  display: flex;
+}
+
+.heart-container {
+  font-size: 1.2rem;
+  align-self: flex-end;
+}
+
+#main-footer {
+  background-color: #444343;
+}
+
+#footer-menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  line-height: 1.5rem;
+}
+
+#logo-footer {
+  color: white;
+}

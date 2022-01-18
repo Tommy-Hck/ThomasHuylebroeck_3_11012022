@@ -170,4 +170,36 @@ body{
 .picture{
     @include picture-size;
 }
-    
+
+.restaurant-title{
+    font-weight: bold;
+}
+
+.restaurant-title-container{
+    width: 90%;
+}
+
+.title-container{
+    padding: 1em;
+    display: flex;
+}
+
+.heart-container{
+    font-size: 1.2rem;
+    align-self: flex-end;
+}
+
+#main-footer{
+    background-color:rgb(68, 67, 67);
+}
+
+#footer-menu{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    line-height: 1.5rem;
+}
+
+#logo-footer{
+    color: white;
+}
