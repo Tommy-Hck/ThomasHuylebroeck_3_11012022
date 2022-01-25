@@ -5,8 +5,11 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="http://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
     <link href="http://fonts.cdnfonts.com/css/shrikhand" rel="stylesheet">
+
+
     <script src="https://kit.fontawesome.com/0a06104276.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
@@ -81,55 +84,60 @@
 
         <section id="main-restaurants">
             <h2 id="restaurants-title">Restaurants</h2>
-            <div id="container-restaurants">
-                <div class="div-restaurant">
-                    <div class="picture-div"><img class="picture" src="./images-accueil/1.jpg"
+            <div class="restaurant-card">
+                <a class="restaurant-card-clickable" href="restaurant-le_delice-des-sens.html">
+                    <div class="picture-container"><img class="picture" src="./images-accueil/1.jpg"
                             alt="plat du restaurant la palette du gout"></div>
-                    <span class="restaurant-title">La palette du goût</span>
-                    <span>Ménilmontant</span>
-                    <span>
-                        <i class="far fa-heart"></i>
-                    </span>
-                </div>
-                <div class="div-restaurant">
-                    <div class="picture-div"><img class="picture" src="./images-accueil/2.jpg"
-                            alt="plat du restaurant la note enchantee"></div>
-                    <span class="restaurant-title">La note enchantée</span>
-                    <span>Charonne</span>
-                    <span>
-                        <i class="far fa-heart"></i>
-                    </span>
+                    <div class="detail-container">
+                    <div class="title">La palette du goût</div>
+                    <div class="place">Ménilmontant</div>
 
-                </div>
-                <div class="div-restaurant">
-                    <div class="picture-div"><img class="picture" src="./images-accueil/3.jpg"
-                            alt="plat du restaurant a la francaise"></div>
-                    <span class="restaurant-title">À la française</span>
-                    <span>Cité rouge</span>
-                    <span>
+                    <div class="heart-container">
                         <i class="far fa-heart"></i>
-                    </span>
+                    </div>
                 </div>
+                </a>
+                </div>
+                <div class="restaurant-card"></div>
+                    <a class="restaurant-card-clickable" href="restaurant-la_note-enchantee.html">
+                    <div class="picture-container"><img class="picture" src="./images-accueil/2.jpg"
+                            alt="plat du restaurant la note enchantee"></div>
+                    <div class="detail-container"></div>
+                    <div class="title">La note enchantée</div>
+                    <div class="place">Charonne</div>
+                    <div class="heart-container">
+                        <i class="far fa-heart"></i>
+                    </div>
+
                 <div class="div-restaurant">
-                    <div class="picture-div"><img class="picture" src="./images-accueil/4.jpg"
+                    <div class="picture-container"><img class="picture" src="./images-accueil/3.jpg"
+                            alt="plat du restaurant a la francaise"></div>
+                    <div class="detail-container">
+                    <div class="title">À la française</div>
+                    <div class="place">Cité rouge</div>
+                    <div class="heart-container">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                </div>
+
+                <div class="div-restaurant">
+                    <div class="picture-container"><img class="picture" src="./images-accueil/4.jpg"
                             alt="plat du restaurant le delice des sens"></div>
-                    <div class="title-container">
-                        <div class="restaurant-title-container">
-                            <div class="restaurant-title">Le délice des sens</div>
-                            <div>Folie-Méricourt</div>
+                        <div class="detail-container">
+                            <div class="title">Le délice des sens</div>
+                            <div class="place">Folie-Méricourt</div>
                         </div>
                         <div class="heart-container">
                             <i class="far fa-heart"></i>
                         </div>
                     </div>
-                </div>
-            </div>
         </section>
     </main>
 
     <footer>
         <section id="main-footer">
-            <div id="logo-footer"><img id="logo" src="./logo/ohmyfood.png" alt="logo"></div>
+            <div id="logo-footer">ohmyfood</div>
             <div id="footer-menu">
                 <span>Proposer un restaurant</span>
                 <span>Devenir partenaire</span>
