@@ -181,7 +181,7 @@ body{
 }
 
 .restaurant-card{
-    width: 90%;
+    @include flex-ctr;
 }
 
 .restaurant-card-clickable{
