@@ -1,5 +1,7 @@
 @import "./mixin.scss";
 @import "./variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,400&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
 @font-face{
     font-family: Shrikhand;
@@ -27,20 +29,23 @@ body{
 }
 
 
-#map-container{
+#map{
+    &-container{
     @include flex-ctr;
     background-color: #e2e2e2;
     padding-left: 5vw;
     border-top: 3px solid #cccc;
+    }
+
+    &-marker{
+        @include flex-ctr;
+        height: 5vh;
+    }
 }
 
 
 .btn{
     @include flex-ctr;
-}
-
-#map-marker{
-    height: 5vh;
 }
 
 .fa-map-marker-alt{
@@ -49,7 +54,7 @@ body{
     margin-right: 4vw;
 }
 
-.first--btn{
+.btn-first{
     border: none;
     background-color: #e2e2e2;
 }
@@ -72,7 +77,7 @@ body{
     opacity: 0.6;
 }
 
-.second--btn{
+.btn-second{
     @include button;
     margin-top: 1.5rem;
     background: linear-gradient(180deg,#FF79DA,#9356DC);
@@ -88,7 +93,10 @@ body{
 }
 
 #menu :hover{
-    background-color: #eee5fa;
+    background-color: #f8d7ef;
+    .fonction-icon{
+        color: $primary;
+    }
 }
 
 #menu-title{
@@ -136,9 +144,6 @@ body{
     opacity: 0.8;
 }
 
-.fa-store{
-    color: #9356DC;
-}
 
 #main-restaurants{
     background-color: #F2F2F2;
@@ -179,14 +184,23 @@ body{
     width: 90%;
 }
 
-.title-container{
-    padding: 1em;
+.restaurant-card-clickable{
+    text-decoration: none;
+}
+
+.title, .place, .fa-heart{
+    color: black;
+}
+
+.detail-container{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
 }
 
 .heart-container{
     font-size: 1.2rem;
-    align-self: flex-end;
 }
 
 #main-footer{
@@ -200,5 +214,4 @@ body{
     line-height: 1.5rem;
 }
 
-#logo-footer{
-}
+

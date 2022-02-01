@@ -1,3 +1,4 @@
+@import "./variables.scss";
 
 @mixin flex-ctr {
     display: flex;
@@ -21,4 +22,10 @@
     width: 56vw;
     border-style: none;
     box-shadow: 2px 2px 6px #c9c9c9;
+}
+
+@mixin icon-hover {
+    :hover{
+        color: $primary;
+    }
 }
