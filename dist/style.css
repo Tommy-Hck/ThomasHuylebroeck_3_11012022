@@ -180,11 +180,11 @@ body {
   border-top-right-radius: 10px;
 }
 
-.restaurant-title {
+.title {
   font-weight: bold;
 }
 
-.restaurant-title-container {
+.restaurant-card {
   width: 90%;
 }
 
@@ -197,9 +197,6 @@ body {
 }
 
 .detail-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 1em;
 }
 
