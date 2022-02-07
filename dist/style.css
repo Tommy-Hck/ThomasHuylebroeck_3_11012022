@@ -156,10 +156,6 @@ body {
   align-items: center;
 }
 
-#restaurants-title {
-  margin-left: 20px;
-}
-
 .div-restaurant {
   display: flex;
   justify-content: center;
@@ -184,13 +180,33 @@ body {
   font-weight: bold;
 }
 
+.restaurant-title {
+  margin-left: 1.8rem;
+}
 .restaurant-card {
   display: flex;
   justify-content: center;
+  padding-bottom: 1em;
+}
+
+.new {
+  text-align: center;
+  font-size: smaller;
+  width: 4.5rem;
+  height: 1.8rem;
+  color: #008766;
+  background-color: #99e2d0;
+  border: none;
+  border-radius: 0.15em;
+  position: relative;
+  left: 19rem;
+  top: 2rem;
 }
 
 .restaurant-card-clickable {
   text-decoration: none;
+  background-color: white;
+  border-radius: 10px;
 }
 
 .title, .place, .fa-heart {
@@ -198,11 +214,20 @@ body {
 }
 
 .detail-container {
+  display: flex;
+  justify-content: space-between;
   padding: 1em;
 }
 
 .heart-container {
   font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.fa-heart:hover {
+  background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: inherit;
 }
 
 #main-footer {
