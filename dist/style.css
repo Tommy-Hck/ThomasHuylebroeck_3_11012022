@@ -28,7 +28,7 @@ body {
 #map-container {
   display: flex;
   justify-content: center;
-  background-color: #e2e2e2;
+  background-color: #eaeaea;
   padding-left: 5vw;
   border-top: 3px solid #cccc;
 }
@@ -51,7 +51,7 @@ body {
 
 .btn-first {
   border: none;
-  background-color: #e2e2e2;
+  background-color: #eaeaea;
 }
 
 #explore {
@@ -59,7 +59,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: #F2F2F2;
+  background-color: #F6F6F6;
   padding-bottom: 5vh;
 }
 
@@ -93,7 +93,7 @@ body {
 }
 
 #menu :hover {
-  background-color: #f8d7ef;
+  background-color: #f5edff;
 }
 #menu :hover .fonction-icon {
   color: #9356DC;
@@ -114,10 +114,10 @@ body {
   align-items: center;
   border-radius: 20px;
   border-style: none;
-  box-shadow: 2px 2px 6px #c9c9c9;
+  box-shadow: 2px 2px 6px #F6F6F6;
   font-weight: bold;
   text-decoration: none;
-  background-color: #F2F2F2;
+  background-color: #F6F6F6;
   padding: 1rem;
   width: 15rem;
   justify-content: space-evenly;
@@ -137,7 +137,7 @@ body {
 }
 
 .fonction-icon {
-  color: grey;
+  color: #7e7e7e;
 }
 
 .fx-btn {
@@ -146,7 +146,7 @@ body {
 }
 
 #main-restaurants {
-  background-color: #F2F2F2;
+  background-color: #F6F6F6;
   padding-top: 2.5rem;
 }
 
@@ -231,7 +231,7 @@ body {
 }
 
 #main-footer {
-  background-color: #444343;
+  background-color: #353535;
 }
 
 #footer-menu {
