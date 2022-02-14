@@ -3,14 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,400&family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
-@font-face{
-    font-family: Shrikhand;
-    src: url("./fonts/Shrikhand");
-}
-
 body{
     font-family: Roboto;
-    src: url(./fonts/Roboto);
 }
 
 #div-logo{
@@ -189,28 +183,30 @@ body{
 }
 
 .new{
+    display: inline;
     text-align: center;
     font-size: smaller;
-    width: 4.5rem;
-    height: 1.8rem;
+    font-weight:600;
     color: #008766;
     background-color: #99e2d0;
     border: none;
     border-radius: 0.15em;
-    position: relative;
-    left: 19rem;
-    top: 2rem;
+    position: absolute;
+    top: 10px;
+    padding: 0.5em 0.7em;
+    right: 10px;
 }
 
 
 
 .restaurant-card-clickable{
+    position: relative;
     text-decoration: none;
     background-color: white;
     border-radius: 10px;
 }
 
-.title, .place, .fa-heart{
+.title, .place{
     color: black;
 }
 
@@ -226,21 +222,32 @@ body{
     align-items: center;
 }
 
-.fa-heart:hover{
-    background: linear-gradient($primary, $secondary);
-    background-clip:inherit;
+.far:hover{
+    background-color: linear-gradient($primary,$secondary);
 }
 
+.far{
+    color: black;
+}
 
 #main-footer{
+    display: flex;
+    line-height: 1.5rem;
     background-color:#353535;
 }
 
 #footer-menu{
-    display: flex;
-    flex-direction: column;
     margin-top: 1rem;
     line-height: 1.5rem;
+    color: white;
 }
 
+#logo-footer{
+    font-weight: bold;
+    color: white;
+    font-family: shrikhand;
+}
 
+.fa-utensils, .fa-hands-helping{
+    color: white;
+}
