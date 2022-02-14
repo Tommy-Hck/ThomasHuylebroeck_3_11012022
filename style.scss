@@ -219,6 +219,9 @@ body{
 .heart-container{
     .far{
     @include heart-property;
+    position: absolute;
+    right: 0.5em;
+    bottom: 1em;
         &:hover{
             display: block;
             background: linear-gradient($secondary, $primary);
@@ -232,6 +235,8 @@ body{
     .fas{
         @include heart-property;
         position: absolute;
+        right: 0.5em;
+        bottom: 1em;
         opacity: 0;
     }
     &:hover{
