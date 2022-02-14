@@ -217,17 +217,36 @@ body{
 }
 
 .heart-container{
-    font-size: 1.2rem;
-    display: flex;
-    align-items: center;
-}
-
-.far:hover{
-    background-color: linear-gradient($primary,$secondary);
-}
-
-.far{
-    color: black;
+    .far{
+    @include heart-property;
+        &:hover{
+            display: block;
+            background: linear-gradient($secondary, $primary);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+            opacity: 0;
+        }
+    }
+    .fas{
+        @include heart-property;
+        position: absolute;
+        opacity: 0;
+    }
+    &:hover{
+        .far{
+            opacity: 0;
+        }
+        .fas{
+            background: linear-gradient(45deg, $secondary 0%, $primary 100%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;          
+            opacity: 1;
+        }
+    }
 }
 
 #main-footer{
