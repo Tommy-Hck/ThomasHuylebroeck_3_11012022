@@ -221,8 +221,6 @@ body {
   color: black;
   cursor: pointer;
   position: absolute;
-  right: 0.5em;
-  bottom: 1em;
 }
 .heart-container .far:hover {
   display: block;
@@ -238,8 +236,6 @@ body {
   color: black;
   cursor: pointer;
   position: absolute;
-  right: 0.5em;
-  bottom: 1em;
   opacity: 0;
 }
 .heart-container:hover .far {
@@ -247,6 +243,7 @@ body {
 }
 .heart-container:hover .fas {
   background: linear-gradient(45deg, #FF79DA 0%, #9356DC 100%);
+  transform: str;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -256,6 +253,8 @@ body {
 
 #main-footer {
   display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
   line-height: 1.5rem;
   background-color: #353535;
 }
@@ -272,6 +271,12 @@ body {
   font-family: shrikhand;
 }
 
-.fa-utensils, .fa-hands-helping {
+.fa-utensils {
   color: white;
+  padding-right: 1.2em;
+}
+
+.fa-hands-helping {
+  color: white;
+  padding-right: 0.8em;
 }

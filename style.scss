@@ -220,8 +220,6 @@ body{
     .far{
     @include heart-property;
     position: absolute;
-    right: 0.5em;
-    bottom: 1em;
         &:hover{
             display: block;
             background: linear-gradient($secondary, $primary);
@@ -235,8 +233,6 @@ body{
     .fas{
         @include heart-property;
         position: absolute;
-        right: 0.5em;
-        bottom: 1em;
         opacity: 0;
     }
     &:hover{
@@ -245,6 +241,7 @@ body{
         }
         .fas{
             background: linear-gradient(45deg, $secondary 0%, $primary 100%);
+            transform: str;
             -webkit-background-clip: text;
             -moz-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -256,6 +253,8 @@ body{
 
 #main-footer{
     display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
     line-height: 1.5rem;
     background-color:#353535;
 }
@@ -272,6 +271,12 @@ body{
     font-family: shrikhand;
 }
 
-.fa-utensils, .fa-hands-helping{
+.fa-utensils{
     color: white;
+    padding-right: 1.2em;
+}
+
+.fa-hands-helping{
+    color: white;
+    padding-right: 0.8em;
 }
