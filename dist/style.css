@@ -106,20 +106,20 @@ body {
 .btn-fonction {
   display: flex;
   align-items: center;
-  border-radius: 20px;
+  border-radius: 15px;
   border-style: none;
   box-shadow: 2px 2px 6px #F6F6F6;
   font-weight: bold;
   text-decoration: none;
   background-color: #F6F6F6;
-  padding: 1rem;
+  padding: 1.5rem 2rem;
   width: 15rem;
   justify-content: space-evenly;
   margin-bottom: 1.5rem;
 }
 
 .fonction-number {
-  margin-left: -2.8rem;
+  margin-left: -4rem;
   color: white;
   background-color: #9356DC;
   width: 1.2rem;
@@ -175,7 +175,7 @@ body {
 }
 
 .restaurant-title {
-  margin-left: 1.8rem;
+  margin-left: 20px;
 }
 .restaurant-card {
   display: flex;
