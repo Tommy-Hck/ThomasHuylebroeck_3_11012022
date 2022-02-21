@@ -140,7 +140,7 @@ body{
 
 #main-restaurants{
     background-color: #F6F6F6;
-    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
 }
 
 #container-restaurants{
@@ -208,6 +208,11 @@ body{
 .title, .place{
     color: black;
     padding-bottom: 0.2rem;
+}
+
+.place{
+    font-weight: lighter;
+    font-size: 1em;
 }
 
 .detail-container{
