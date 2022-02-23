@@ -11,6 +11,10 @@
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./dist/style.css">
+    <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1120px)" href="./pad.scss" />
+    <link rel="stylesheet" media="screen and (min-width: 1121px)" href="./desktop.scss" />
+
+
 
 
 
@@ -50,8 +54,10 @@
             </div>
         </div>
 
-        <h2 id="menu-title">Fonctionnement</h2>
+
         <nav id="menu">
+
+            <h2 id="menu-title">Fonctionnement</h2>
 
             <div class="div-menus">
                 <a href="#" class="btn-fonction">
@@ -84,78 +90,83 @@
             </div>
         </nav>
 
-        <section id="main-restaurants">
-            <h2 class="restaurant-title">Restaurants</h2>
-            <div class="restaurant-card">
-                <a class="restaurant-card-clickable" href="restaurant-la-palette-du-gout.html">
-                    <div class="new">Nouveau</div>
-                    <div class="picture-container"><img class="picture" src="./images-accueil/1.jpg"
-                            alt="plat du restaurant la palette du gout">
-                    </div>
+        <section id="section-restaurants">
 
-                    <div class="detail-container">
-                        <div>
-                            <div class="title">La palette du goût</div>
-                            <div class="place">Ménilmontant</div>
-                        </div>
-                        <div class="heart-container">
-                            <i class="far fa-heart"></i>
-                            <i class="fas fa-heart"></i>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="restaurant-card">
-                <a class="restaurant-card-clickable" href="restaurant-la-note-enchantee.html">
-                    <div class="new">Nouveau</div>
-                    <div class="picture-container"><img class="picture" src="./images-accueil/2.jpg"
-                            alt="plat du restaurant la note enchantee"></div>
-                    <div class="detail-container">
-                        <div>
-                            <div class="title">La note enchantée</div>
-                            <div class="place">Charonne</div>
-                        </div>
-                        <div class="heart-container">
-                            <i class="far fa-heart"></i>
-                            <i class="fas fa-heart"></i>
+            <div id="main-restaurant">
+
+                <h2 class="restaurant-title">Restaurants</h2>
+
+                <div class="restaurant-card">
+                    <a class="restaurant-card-clickable" href="restaurant-la-palette-du-gout.html">
+                        <div class="new">Nouveau</div>
+                        <div class="picture-container"><img class="picture" src="./images-accueil/1.jpg"
+                                alt="plat du restaurant la palette du gout">
                         </div>
 
-                    </div>
-                </a>
-            </div>
+                        <div class="detail-container">
+                            <div>
+                                <div class="title">La palette du goût</div>
+                                <div class="place">Ménilmontant</div>
+                            </div>
+                            <div class="heart-container">
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="restaurant-card">
+                    <a class="restaurant-card-clickable" href="restaurant-la-note-enchantee.html">
+                        <div class="new">Nouveau</div>
+                        <div class="picture-container"><img class="picture" src="./images-accueil/2.jpg"
+                                alt="plat du restaurant la note enchantee"></div>
+                        <div class="detail-container">
+                            <div>
+                                <div class="title">La note enchantée</div>
+                                <div class="place">Charonne</div>
+                            </div>
+                            <div class="heart-container">
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                            </div>
 
-            <div class="restaurant-card">
-                <a class="restaurant-card-clickable" href="restaurant-a-la-francaise.html">
-                    <div class="picture-container"><img class="picture" src="./images-accueil/3.jpg"
-                            alt="plat du restaurant a la francaise"></div>
-                    <div class="detail-container">
-                        <div>
-                            <div class="title">À la française</div>
-                            <div class="place">Cité rouge</div>
                         </div>
-                        <div class="heart-container">
-                            <i class="far fa-heart"></i>
-                            <i class="fas fa-heart"></i>
-                        </div>
-                    </div>
-                </a>
-            </div>
+                    </a>
+                </div>
 
-            <div class="restaurant-card">
-                <a class="restaurant-card-clickable" href="restaurant-le-delice-des-sens.html">
-                    <div class="picture-container"><img class="picture" src="./images-accueil/4.jpg"
-                            alt="plat du restaurant le delice des sens"></div>
-                    <div class="detail-container">
-                        <div>
-                            <div class="title">Le délice des sens</div>
-                            <div class="place">Folie-Méricourt</div>
+                <div class="restaurant-card">
+                    <a class="restaurant-card-clickable" href="restaurant-a-la-francaise.html">
+                        <div class="picture-container"><img class="picture" src="./images-accueil/3.jpg"
+                                alt="plat du restaurant a la francaise"></div>
+                        <div class="detail-container">
+                            <div>
+                                <div class="title">À la française</div>
+                                <div class="place">Cité rouge</div>
+                            </div>
+                            <div class="heart-container">
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                            </div>
                         </div>
-                        <div class="heart-container">
-                            <i class="far fa-heart"></i>
-                            <i class="fas fa-heart"></i>
+                    </a>
+                </div>
+
+                <div class="restaurant-card">
+                    <a class="restaurant-card-clickable" href="restaurant-le-delice-des-sens.html">
+                        <div class="picture-container"><img class="picture" src="./images-accueil/4.jpg"
+                                alt="plat du restaurant le delice des sens"></div>
+                        <div class="detail-container">
+                            <div>
+                                <div class="title">Le délice des sens</div>
+                                <div class="place">Folie-Méricourt</div>
+                            </div>
+                            <div class="heart-container">
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-heart"></i>
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
