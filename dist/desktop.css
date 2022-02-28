@@ -1,10 +1,9 @@
-#main-restaurants {
+#main-restaurant {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 50%;
 }
 
-.picture {
-  width: 150%;
+.restaurant-card {
+  width: 50%;
 }
