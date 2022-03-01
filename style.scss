@@ -195,7 +195,11 @@ body{
     right: 10px;
 }
 
-
+#section-restaurants{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 .restaurant-card-clickable{
     position: relative;
