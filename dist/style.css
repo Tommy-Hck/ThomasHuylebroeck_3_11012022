@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 body {
   font-family: Roboto;
+  background-color: #eaeaea;
 }
 
 #div-logo {
@@ -9,6 +10,7 @@ body {
   justify-content: center;
   padding-top: 1.5rem;
   padding-bottom: 1rem;
+  background-color: white;
 }
 
 #logo {
@@ -31,16 +33,13 @@ body {
 #map-marker {
   display: flex;
   justify-content: center;
+  margin-right: 1rem;
+  padding-left: 5rem;
 }
 
 .btn {
   display: flex;
   justify-content: center;
-}
-
-.fa-map-marker-alt {
-  margin-right: 1rem;
-  padding-left: 5rem;
 }
 
 .btn-first {
@@ -70,10 +69,9 @@ body {
   border-bottom-right-radius: 20rem;
   border-top-left-radius: 20rem;
   border-top-right-radius: 20rem;
-  width: 56vw;
   border-style: none;
   box-shadow: 2px 2px 6px #c9c9c9;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   margin-top: 1.5rem;
   background: linear-gradient(180deg, #FF79DA, #9356DC);
   color: white;
@@ -83,6 +81,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: white;
 }
 
 .btn-fonction:hover {
@@ -139,6 +138,9 @@ body {
 }
 
 #section-restaurants {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #F6F6F6;
   padding-bottom: 2.5rem;
 }
@@ -195,12 +197,6 @@ body {
   top: 10px;
   padding: 0.5em 0.7em;
   right: 10px;
-}
-
-#section-restaurants {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 .restaurant-card-clickable {

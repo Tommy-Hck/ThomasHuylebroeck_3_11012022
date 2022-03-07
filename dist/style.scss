@@ -1,0 +1,298 @@
+@import "./mixin.scss";
+@import "./variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,400&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+body{
+    font-family: Roboto;
+    background-color: #eaeaea;
+}
+
+
+#div-logo{
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    background-color: white;
+}
+
+#logo{
+    width: 10rem;
+}
+
+#locate{
+    @include flex-ctr;
+}
+
+
+#map{
+    &-container{
+    @include flex-ctr;
+    background-color: #eaeaea;
+    padding: 0.8rem;
+    border-top: 3px solid #cccc;
+    margin-bottom: 1rem;
+    }
+
+    &-marker{
+        @include flex-ctr;
+        margin-right: 1rem;
+        padding-left: 5rem;
+    }
+}
+
+
+.btn{
+    @include flex-ctr;
+}
+
+
+.btn-first{
+    border: none;
+    background-color: #eaeaea;
+}
+
+
+#explore{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #F6F6F6;
+    padding-bottom: 5vh;
+}
+
+#order{
+    width: 65%;
+}
+
+#explore-description{
+    opacity: 0.6;
+}
+
+.btn-second{
+    @include button;
+    margin-top: 1.5rem;
+    background: linear-gradient(180deg,#FF79DA,#9356DC);
+    color: white;
+}
+
+
+#menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.btn-fonction:hover{
+    background-color: #f5edff;
+    .fonction-icon{
+        color: $primary;
+    }
+}
+
+#menu-title{
+    margin-top: 3.5rem;
+    margin-bottom: 2.5rem;
+    width: 19rem;
+}
+
+.fx-compose{
+    margin-right: 0.8rem;
+}
+.btn-fonction{
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    border-style: none;
+    box-shadow: 2px 2px 6px #F6F6F6;
+    font-weight: bold;
+    text-decoration: none;
+    background-color:#F6F6F6;
+    padding: 1.5rem 2rem;
+    width: 15rem;
+    justify-content: space-evenly;
+    margin-bottom: 1.5rem;
+}
+
+.fonction-number{
+    margin-left: -4rem;
+    color: white;
+    background-color: $primary;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fonction-icon{
+    color: #7e7e7e;
+}
+
+.fx-btn{
+    color: black;
+    opacity: 0.8;
+}
+
+
+#section-restaurants{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F6F6F6;
+    padding-bottom: 2.5rem;
+    
+}
+
+#container-restaurants{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-restaurant{
+    @include flex-ctr;
+    flex-direction: column;
+    align-content: center;
+    background-color: white;
+    height: 12.6rem;
+    width: 20rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+
+.picture{
+    @include picture-size;
+}
+
+.title{
+    font-weight: bold;
+}
+
+.restaurant{
+
+    &-title{
+        width: 20rem;
+    }
+
+    &-card{
+        @include flex-ctr;
+        padding-bottom: 1em;
+    }
+}
+
+.new{
+    display: inline;
+    text-align: center;
+    font-size: smaller;
+    font-weight:600;
+    color: #008766;
+    background-color: #99e2d0;
+    border: none;
+    border-radius: 0.15em;
+    position: absolute;
+    top: 10px;
+    padding: 0.5em 0.7em;
+    right: 10px;
+}
+
+.restaurant-card-clickable{
+    position: relative;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.title, .place{
+    color: black;
+    padding-bottom: 0.2rem;
+}
+
+.place{
+    font-weight: lighter;
+    font-size: 1em;
+}
+
+.detail-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.heart-container{   
+    position: relative;
+    .far{
+    @include heart-property;
+        &:hover{
+            display: block;
+            background: linear-gradient($secondary, $primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-emphasis-color: transparent;
+            opacity: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+    .fas{
+        @include heart-property;
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: scale(.1);
+        transition-duration: 2s;
+        color: linear-gradient(45deg, $secondary 0%, $primary 100%);
+    }
+    &:hover{
+        .far{
+            opacity: 0;
+        }
+        .fas{
+            background: linear-gradient(45deg, $secondary 0%, $primary 100%);
+            transform: scale(1);
+            // transition-property: transform;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 1;
+        }
+    }
+}
+
+#main-footer{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    line-height: 1.5rem;
+    background-color:#353535;
+}
+
+#footer-menu{
+    margin-top: 1rem;
+    line-height: 1.5rem;
+    color: white;
+}
+
+#logo-footer{
+    font-weight: bold;
+    color: white;
+    font-family: shrikhand;
+}
+
+.fa-utensils{
+    color: white;
+    padding-right: 1.2em;
+}
+
+.fa-hands-helping{
+    color: white;
+    padding-right: 0.8em;
+}
