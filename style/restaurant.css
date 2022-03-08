@@ -48,11 +48,6 @@ body {
   font-size: 1.3rem;
 }
 
-.far :hover {
-  background-color: linear-gradient #FF79DA, #9356DC;
-  cursor: pointer;
-}
-
 #menu-title {
   font-family: shrikhand;
   font-weight: lighter;
