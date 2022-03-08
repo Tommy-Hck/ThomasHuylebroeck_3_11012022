@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,400&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+body {
+  background-color: #eaeaea;
+}
+
+#div-logo {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  background-color: white;
+}
+
+#logo {
+  width: 10rem;
+}
+
+.fa-arrow-left {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 2rem;
+}
+
+.picture {
+  width: 25rem;
+}
+
+#menu {
+  position: relative;
+  background-color: #eaeaea;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-top: -3.5rem;
+}
+
+#div-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0rem 1rem;
+}
+
+.far {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.far :hover {
+  background-color: linear-gradient #FF79DA, #9356DC;
+  cursor: pointer;
+}
+
+#menu-title {
+  font-family: shrikhand;
+  font-weight: lighter;
+  margin-top: 2rem;
+}

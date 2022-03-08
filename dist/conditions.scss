@@ -1,3 +1,0 @@
-@if (lightness ($grey) < 50%){
-    $grey: darken (20%);
-}
