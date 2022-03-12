@@ -12,6 +12,12 @@ body {
   background-color: white;
 }
 
+#img-logo {
+  width: 92%;
+  display: flex;
+  justify-content: center;
+}
+
 #logo {
   width: 10rem;
 }
@@ -19,8 +25,8 @@ body {
 .fa-arrow-left {
   display: flex;
   align-items: center;
-  position: absolute;
-  left: 2rem;
+  text-decoration: none;
+  color: black;
 }
 
 .picture {
@@ -33,6 +39,11 @@ body {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   margin-top: -3.5rem;
+}
+#menu-title {
+  font-family: shrikhand;
+  font-weight: lighter;
+  margin-top: 2rem;
 }
 
 #div-title {
@@ -48,8 +59,8 @@ body {
   font-size: 1.3rem;
 }
 
-#menu-title {
-  font-family: shrikhand;
+#starter-title {
   font-weight: lighter;
-  margin-top: 2rem;
+  border-bottom: 0.2rem solid green;
+  line-height: 0.2rem;
 }

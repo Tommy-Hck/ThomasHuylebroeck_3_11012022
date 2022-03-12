@@ -254,9 +254,6 @@ body {
   transition-duration: 2s;
   color: linear-gradient(45deg, #FF79DA 0%, #9356DC 100%);
 }
-.heart-container:hover .far {
-  opacity: 0;
-}
 .heart-container:hover .fas {
   background: linear-gradient(45deg, #FF79DA 0%, #9356DC 100%);
   transform: scale(1);

@@ -229,40 +229,16 @@ body{
     .far{
     @include heart-property;
         &:hover{
-            display: block;
-            background: linear-gradient($secondary, $primary);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-emphasis-color: transparent;
-            opacity: 0;
-            position: absolute;
-            right: 0;
-            top: 0;
+            @include far-hover
         }
     }
     .fas{
         @include heart-property;
-        opacity: 0;
-        position: absolute;
-        right: 0;
-        top: 0;
-        transform: scale(.1);
-        transition-duration: 2s;
-        color: linear-gradient(45deg, $secondary 0%, $primary 100%);
+        @include fas-feature;
     }
     &:hover{
-        .far{
-            opacity: 0;
-        }
         .fas{
-            background: linear-gradient(45deg, $secondary 0%, $primary 100%);
-            transform: scale(1);
-            // transition-property: transform;
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            opacity: 1;
+         @include fas-hover;
         }
     }
 }
