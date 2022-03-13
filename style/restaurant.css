@@ -50,9 +50,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0rem 1rem;
+  padding: 0rem 1.4rem;
   position: relative;
-  padding: 0rem 1rem;
 }
 
 #starter-title {
@@ -62,9 +61,10 @@ body {
 #starter-border {
   font-weight: lighter;
   border-top: 0.2rem solid #99e2d0;
-  width: 3.2rem;
-  margin-top: -0.7rem;
+  width: 2.4rem;
   margin-left: 1rem;
+  margin-top: 0.2rem;
+  padding-bottom: 1rem;
 }
 
 .fas {
@@ -106,4 +106,29 @@ body {
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.dish-container {
+  padding: 0.7rem 0.4rem;
+  background-color: white;
+  border-radius: 10px;
+  width: 21.3rem;
+  margin-left: 0.5rem;
+}
+
+.ingredients {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+  font-weight: lighter;
+}
+
+.dish-title {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 1.1em;
+  font-weight: bold;
 }
