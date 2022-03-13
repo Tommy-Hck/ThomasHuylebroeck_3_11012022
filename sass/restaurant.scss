@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,400&family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import "./mixin.scss";
+@import "./variables.scss";
 
 body{
     background-color: #eaeaea;
@@ -47,20 +48,43 @@ body{
 }
 
 #div-title{
+    @include title-feature;
+}
+
+#starter-title{
+    @include starter-feature;
+}
+
+#starter-border{
+    font-weight: lighter;
+    border-top: 0.2rem solid #99e2d0;
+    width: 3.2rem;
+    margin-top: -0.7rem;
+    margin-left: 1rem;
+}
+
+
+.fas{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding:  0rem 1rem;
+    align-items: center;
+    font-size: 1.3rem;
+    @include fas-feature;
+
+    &:hover{
+        .fas{
+         @include fas-hover;
+        }
+    }
 }
 
 .far{
     display: flex;
     align-items: center;
     font-size: 1.3rem;
+    cursor: pointer;
+
+    &:hover{
+        @include far-hover;
+    }
 }
 
-#starter-title{
-    font-weight: lighter;
-    border-bottom: 0.2rem solid green;
-    line-height: 0.2rem;
-}

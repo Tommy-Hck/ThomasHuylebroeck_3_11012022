@@ -50,6 +50,7 @@
     transform: scale(.1);
     transition-duration: 2s;
     color: linear-gradient(45deg, $secondary 0%, $primary 100%);
+    cursor: pointer;
 }
 
 @mixin fas-hover{
@@ -63,7 +64,7 @@
 
 @mixin far-hover{
     display: block;
-    background: linear-gradient($secondary, $primary);
+    background: linear-gradient($secondary 0%, $primary 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -72,4 +73,17 @@
     position: absolute;
     right: 0;
     top: 0;
+}
+
+@mixin title-feature{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:  0rem 1rem;
+    position: relative;
+    padding: 0rem 1rem;
+}
+
+@mixin starter-feature{
+    padding: 0rem 1rem;
 }
