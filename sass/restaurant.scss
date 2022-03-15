@@ -51,11 +51,12 @@ body{
     @include title-feature;
 }
 
-#starter-title{
+.starter-title{
     @include starter-feature;
+    margin-top: 1rem;
 }
 
-#starter-border{
+.starter-border{
     font-weight: lighter;
     border-top: 0.2rem solid #99e2d0;
     width: 2.4rem;
@@ -115,3 +116,27 @@ body{
 }
 
 
+.menu-layout{
+    @include menu-layout;
+}
+
+
+#main-footer{
+    @include main-footer;
+}
+
+#footer-menu{
+    @include footer-menu;
+}
+
+#logo-footer{
+    @include logo-footer;
+}
+
+.fa-utensils{
+    @include utensils;
+}
+
+.fa-hands-helping{
+    @include hands;
+}

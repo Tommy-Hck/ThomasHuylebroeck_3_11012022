@@ -52,13 +52,15 @@ body {
   justify-content: space-between;
   padding: 0rem 1.4rem;
   position: relative;
+  margin-bottom: 0.5rem;
 }
 
-#starter-title {
+.starter-title {
   padding: 0rem 1rem;
+  margin-top: 1rem;
 }
 
-#starter-border {
+.starter-border {
   font-weight: lighter;
   border-top: 0.2rem solid #99e2d0;
   width: 2.4rem;
@@ -131,4 +133,40 @@ body {
 .price {
   font-size: 1.1em;
   font-weight: bold;
+}
+
+.menu-layout {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.5rem;
+}
+
+#main-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  line-height: 1.5rem;
+  background-color: #353535;
+}
+
+#footer-menu {
+  margin-top: 1rem;
+  line-height: 1.5rem;
+  color: white;
+}
+
+#logo-footer {
+  font-weight: bold;
+  color: white;
+  font-family: shrikhand;
+}
+
+.fa-utensils {
+  color: white;
+  padding-right: 1.2em;
+}
+
+.fa-hands-helping {
+  color: white;
+  padding-right: 1.2em;
 }

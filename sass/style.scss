@@ -244,31 +244,21 @@ body{
 }
 
 #main-footer{
-    display: flex;
-    flex-direction: column;
-    padding: 1.5rem;
-    line-height: 1.5rem;
-    background-color:#353535;
+    @include main-footer;
 }
 
 #footer-menu{
-    margin-top: 1rem;
-    line-height: 1.5rem;
-    color: white;
+    @include footer-menu;
 }
 
 #logo-footer{
-    font-weight: bold;
-    color: white;
-    font-family: shrikhand;
+    @include logo-footer;
 }
 
 .fa-utensils{
-    color: white;
-    padding-right: 1.2em;
+    @include utensils;
 }
 
 .fa-hands-helping{
-    color: white;
-    padding-right: 0.8em;
+    @include hands;
 }

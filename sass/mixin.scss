@@ -81,8 +81,45 @@
     justify-content: space-between;
     padding:  0rem 1.4rem;
     position: relative;
+    margin-bottom: 0.5rem;
 }
 
 @mixin starter-feature{
     padding: 0rem 1rem;
+}
+
+@mixin menu-layout{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5rem;
+}
+
+@mixin main-footer{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    line-height: 1.5rem;
+    background-color:#353535;
+}
+
+@mixin footer-menu{
+    margin-top: 1rem;
+    line-height: 1.5rem;
+    color: white;
+}
+
+@mixin logo-footer{
+    font-weight: bold;
+    color: white;
+    font-family: shrikhand;
+}
+
+@mixin utensils{
+    color: white;
+    padding-right: 1.2em;
+}
+
+@mixin hands{
+    color: white;
+    padding-right: 1.2em;
 }

@@ -232,7 +232,7 @@ body {
 }
 .heart-container .far:hover {
   display: block;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#FF79DA 0%, #9356DC 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -253,6 +253,7 @@ body {
   transform: scale(0.1);
   transition-duration: 2s;
   color: linear-gradient(45deg, #FF79DA 0%, #9356DC 100%);
+  cursor: pointer;
 }
 .heart-container:hover .fas {
   background: linear-gradient(45deg, #FF79DA 0%, #9356DC 100%);
@@ -290,5 +291,5 @@ body {
 
 .fa-hands-helping {
   color: white;
-  padding-right: 0.8em;
+  padding-right: 1.2em;
 }
