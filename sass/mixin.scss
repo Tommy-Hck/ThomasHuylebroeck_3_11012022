@@ -94,6 +94,15 @@
     margin-bottom: 2.5rem;
 }
 
+@mixin dish-layout{
+    padding: 0.7rem 0.4rem;
+    background-color: white;
+    border-radius: 10px;
+    width: 21.3rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0.8rem;
+}
+
 @mixin main-footer{
     display: flex;
     flex-direction: column;

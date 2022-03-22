@@ -5,6 +5,7 @@
 
 body{
     background-color: #eaeaea;
+    font-family: Roboto;
 }
 
 #div-logo{
@@ -30,7 +31,7 @@ body{
 }
 
 .picture{
-    width: 25rem;
+    width: 100%;
 }
 
 #menu{
@@ -66,20 +67,19 @@ body{
 }
 
 
-.fas{
+.full{
     display: flex;
     align-items: center;
     font-size: 1.3rem;
     @include fas-feature;
 
     &:hover{
-        .fas{
          @include fas-hover;
         }
-    }
+    
 }
 
-.far{
+.empty{
     display: flex;
     align-items: center;
     font-size: 1.3rem;
@@ -91,11 +91,7 @@ body{
 }
 
 .dish-container{
-    padding: 0.7rem 0.4rem;
-    background-color: white;
-    border-radius: 10px;
-    width: 21.3rem;
-    margin-left: 0.5rem;
+    @include dish-layout;
 }
 
 .ingredients{
