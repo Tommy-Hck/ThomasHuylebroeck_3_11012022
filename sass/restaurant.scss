@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,400&family=Shrikhand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import "./mixin.scss";
 @import "./variables.scss";
 
@@ -68,8 +67,6 @@ body{
 
 
 .full{
-    display: flex;
-    align-items: center;
     font-size: 1.3rem;
     @include fas-feature;
 
@@ -80,8 +77,6 @@ body{
 }
 
 .empty{
-    display: flex;
-    align-items: center;
     font-size: 1.3rem;
     cursor: pointer;
 
@@ -107,7 +102,6 @@ body{
 }
 
 .price{
-    font-size: 1.1em;
     font-weight: bold;
 }
 

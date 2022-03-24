@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,400&family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 body {
   background-color: #eaeaea;
   font-family: Roboto;
@@ -71,8 +70,6 @@ body {
 }
 
 .full {
-  display: flex;
-  align-items: center;
   font-size: 1.3rem;
   opacity: 0;
   position: absolute;
@@ -93,8 +90,6 @@ body {
 }
 
 .empty {
-  display: flex;
-  align-items: center;
   font-size: 1.3rem;
   cursor: pointer;
 }
@@ -117,7 +112,8 @@ body {
   border-radius: 10px;
   width: 21.3rem;
   margin-left: 0.5rem;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
+  box-shadow: 2px 2px 2px #c9c9c9;
 }
 
 .ingredients {
@@ -133,7 +129,6 @@ body {
 }
 
 .price {
-  font-size: 1.1em;
   font-weight: bold;
 }
 

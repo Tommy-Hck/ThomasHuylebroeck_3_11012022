@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,400&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+
 body {
   background-color: #eaeaea;
+  font-family: Roboto;
 }
 
 #div-logo {
@@ -30,7 +32,7 @@ body {
 }
 
 .picture {
-  width: 25rem;
+  width: 100%;
 }
 
 #menu {
