@@ -21,6 +21,9 @@
     border-style: none;
     box-shadow: 2px 2px 6px #c9c9c9;
     padding: 1rem 1.5rem;
+    margin-top: 1.5rem;
+    background: linear-gradient(180deg,#FF79DA,#9356DC);
+    color: white;
 }
 
 @mixin icon-hover {
@@ -79,6 +82,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding:  0rem 1.4rem;
     position: relative;
     margin-bottom: 0.5rem;
@@ -95,7 +99,7 @@
 }
 
 @mixin dish-layout{
-    padding: 0.7rem 0.4rem;
+    padding: 0.8rem 0.6rem;
     background-color: white;
     border-radius: 10px;
     width: 21.3rem;

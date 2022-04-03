@@ -4,6 +4,91 @@ body {
   font-family: Roboto;
 }
 
+.l2 {
+  animation-delay: 0.2s;
+}
+
+.l3 {
+  animation-delay: 0.3s;
+}
+
+.l4 {
+  animation-delay: 0.4s;
+}
+
+.l5 {
+  animation-delay: 0.5s;
+}
+
+.l6 {
+  animation-delay: 0.6s;
+}
+
+.l7 {
+  animation-delay: 0.7s;
+}
+
+.l8 {
+  animation-delay: 0.8s;
+}
+
+#loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s ease-in-out;
+  margin-top: 120px;
+  animation: fadeout 0.25s 3s forwards;
+}
+
+.letter {
+  color: #FF79DA;
+  animation: loader infinite 0.3s alternate;
+  font-size: 5rem;
+}
+
+@keyframes loader {
+  100% {
+    transform: translateY(-30px);
+  }
+}
+@keyframes fadeout {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+    visibility: hidden;
+  }
+}
+.l2 {
+  animation-delay: 0.1s;
+}
+
+.l3 {
+  animation-delay: 0.2s;
+}
+
+.l4 {
+  animation-delay: 0.3s;
+}
+
+.l5 {
+  animation-delay: 0.4s;
+}
+
+.l6 {
+  animation-delay: 0.5s;
+}
+
+.l7 {
+  animation-delay: 0.6s;
+}
+
+.l8 {
+  animation-delay: 0.7s;
+}
+
 #div-logo {
   display: flex;
   justify-content: space-evenly;
@@ -50,6 +135,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding: 0rem 1.4rem;
   position: relative;
   margin-bottom: 0.5rem;
@@ -70,6 +156,7 @@ body {
 }
 
 .full {
+  visibility: hidden;
   font-size: 1.3rem;
   opacity: 0;
   position: absolute;
@@ -90,6 +177,8 @@ body {
 }
 
 .empty {
+  display: flex;
+  align-items: 1.3rem;
   font-size: 1.3rem;
   cursor: pointer;
 }
@@ -107,7 +196,7 @@ body {
 }
 
 .dish-container {
-  padding: 0.7rem 0.4rem;
+  padding: 0.8rem 0.6rem;
   background-color: white;
   border-radius: 10px;
   width: 21.3rem;
@@ -124,7 +213,6 @@ body {
 }
 
 .dish-title {
-  font-size: 1.1em;
   font-weight: bold;
 }
 
@@ -136,6 +224,26 @@ body {
   display: flex;
   flex-direction: column;
   margin-bottom: 2.5rem;
+}
+
+.order-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-second {
+  border-bottom-left-radius: 20rem;
+  border-bottom-right-radius: 20rem;
+  border-top-left-radius: 20rem;
+  border-top-right-radius: 20rem;
+  border-style: none;
+  box-shadow: 2px 2px 6px #c9c9c9;
+  padding: 1rem 1.5rem;
+  margin-top: 1.5rem;
+  background: linear-gradient(180deg, #FF79DA, #9356DC);
+  color: white;
+  margin-top: auto;
+  margin-bottom: 3rem;
 }
 
 #main-footer {
