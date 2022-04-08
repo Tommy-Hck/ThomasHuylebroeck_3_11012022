@@ -75,6 +75,7 @@ a:link {
 }
 
 .empty {
+  color: black;
   cursor: pointer;
 }
 .empty:hover {
@@ -162,5 +163,5 @@ a:link {
 
 .fa-hands-helping {
   color: white;
-  padding-right: 1.2em;
+  padding-right: 0.8em;
 }
