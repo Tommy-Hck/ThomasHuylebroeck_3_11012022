@@ -38,6 +38,18 @@
     cursor: pointer;
 }
 
+@mixin emptyheart-property{
+    color: black;
+    cursor: pointer;    
+}
+
+@mixin heart-hover{
+    transform: rotateY(100%);
+    transition-duration: 3s;
+    font-weight: 900;
+    color: #FF79DA
+}
+
 @mixin arrow-property{
     display: flex;
     align-items: center;
@@ -102,8 +114,8 @@
     padding: 0.8rem 0.6rem;
     background-color: white;
     border-radius: 10px;
-    width: 21.3rem;
     margin-left: 0.5rem;
+    margin-right: 0.5rem;
     margin-bottom: 1rem;
     box-shadow: 2px 2px 2px #c9c9c9;
 }
