@@ -10,9 +10,9 @@ body{
 
 // LOADER
 
-@for $i from 2 through 8 {
-    .l#{$i} {
-            animation-delay: 0.1s*$i;
+@for $i from 1 through 8 {
+    .l-#{$i} {
+        animation-delay: 0.1s * $i;
     }
 }
 
@@ -42,7 +42,7 @@ body{
 }
 
 .letter{
-    background-image: linear-gradient(50deg, $secondary, $primary);
+    background-image: linear-gradient(180deg, $secondary, $primary);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;

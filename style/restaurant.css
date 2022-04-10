@@ -110,6 +110,16 @@ a:link {
   font-weight: bold;
 }
 
+.slide {
+  width: 0rem;
+}
+.slide:hover {
+  background: #99e2d0;
+  cursor: pointer;
+  transform: translateX(-25%);
+  width: 2rem;
+}
+
 .menu-layout {
   display: flex;
   flex-direction: column;

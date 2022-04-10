@@ -94,7 +94,23 @@ a:link{
 }
 
 .price{
+    // background: #99e2d0;
+    // cursor: pointer;
+    // display:flex;
+    // justify-content: center;
+    // align-items: center;
     font-weight: bold;
+    // transition: transform 1s ease-in-out, width 1s ease-in-out;
+}
+
+.slide{
+    width: 0rem;
+    &:hover{
+        background: #99e2d0;
+        cursor: pointer;
+        transform:translateX(-25%);
+        width:2rem; 
+    }
 }
 
 
