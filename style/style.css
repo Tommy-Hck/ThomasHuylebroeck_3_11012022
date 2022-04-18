@@ -5,6 +5,44 @@ body {
   background-color: #eaeaea;
 }
 
+@keyframes fadeout {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+    visibility: hidden;
+  }
+}
+#loader-container {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 80%;
+  z-index: 100;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s ease-in-out;
+  animation: fadeout 0.25s 3s forwards;
+}
+
+@keyframes loader {
+  100% {
+    transform: translateY(-30px);
+  }
+}
+.letter {
+  background-image: linear-gradient(180deg, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: loader infinite 0.3s alternate;
+  font-size: 5rem;
+}
+
 .l-1 {
   animation-delay: 0.1s;
 }
@@ -39,46 +77,9 @@ body {
 
 .letter {
   font-family: shrikhand;
+  padding: 17px;
 }
 
-#loader-container {
-  position: fixed;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 100;
-  background: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 1s ease-in-out;
-  animation: fadeout 0.25s 3s forwards;
-}
-
-@keyframes fadeout {
-  0% {
-    opacity: 100%;
-  }
-  100% {
-    opacity: 0%;
-    visibility: hidden;
-  }
-}
-.letter {
-  background-image: linear-gradient(180deg, #FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  animation: loader infinite 0.3s alternate;
-  font-size: 5rem;
-}
-
-@keyframes loader {
-  100% {
-    transform: translateY(-30px);
-  }
-}
 #div-logo {
   display: flex;
   justify-content: center;

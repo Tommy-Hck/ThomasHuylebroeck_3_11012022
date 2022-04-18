@@ -10,20 +10,19 @@ body{
 
 // LOADER
 
-@for $i from 1 through 8 {
-    .l-#{$i} {
-        animation-delay: 0.1s * $i;
+@keyframes fadeout{
+    0%{opacity: 100%;}
+    100%{
+        opacity: 0%;
+        visibility: hidden;
     }
 }
 
-.letter{
-    font-family: shrikhand;
-}
 #loader-container{
     position: fixed;
     top: 0;
     height: 100%;
-    width: 100%;
+    width: 80%;
     z-index: 100;
     background: white;
     display: flex;
@@ -33,11 +32,9 @@ body{
     animation: fadeout 0.25s 3s forwards;
 }
 
-@keyframes fadeout{
-    0%{opacity: 100%;}
-    100%{
-        opacity: 0%;
-        visibility: hidden;
+@keyframes loader{
+    100% {
+        transform: translateY(-30px);
     }
 }
 
@@ -51,14 +48,17 @@ body{
     font-size: 5rem;
 }
 
-@keyframes loader{
-    100% {
-        transform: translateY(-30px);
+@for $i from 1 through 8 {
+    .l-#{$i} {
+        animation-delay: 0.1s * $i;
     }
 }
 
 
-
+.letter{
+    font-family: shrikhand;
+    padding: 17px;
+}
 
 // .l2{animation-delay: 0.1s;}
 
