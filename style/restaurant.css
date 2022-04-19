@@ -85,6 +85,16 @@ a:link {
   color: #FF79DA;
 }
 
+@keyframes slider {
+  0% {
+    transform: translateY(15%);
+    opacity: 0%;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 100%;
+  }
+}
 .dish-container {
   padding: 0.5rem 1rem;
   background-color: white;
@@ -95,6 +105,7 @@ a:link {
   margin-bottom: 1rem;
   box-shadow: 2px 2px 2px #c9c9c9;
   cursor: pointer;
+  animation: slider 4s forwards;
 }
 
 .dish-info {

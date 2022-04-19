@@ -78,8 +78,20 @@ a:link{
     }
 }
 
+@keyframes slider{
+    0%{
+    transform: translateY(15%);
+    opacity: 0%;
+}
+    100%{
+        transform: translateY(0%);
+        opacity: 100%;
+    }
+}
+
 .dish-container{
     @include dish-layout;
+    animation: slider 4s forwards;
 }
 
 .dish-info{
