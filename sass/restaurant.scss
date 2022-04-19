@@ -82,25 +82,36 @@ a:link{
     @include dish-layout;
 }
 
-.ingredients{
+.dish-info{
     display: flex;
     justify-content: space-between;
-    font-size: 0.9em;
-    font-weight: lighter;
+    padding: 0.8rem 0.8rem;
+    overflow: hidden;
+    width: 100%;
+}
+
+.description{
+    @include text-reduction;
 }
 
 .dish-title{
     font-weight: bold;
+    padding-bottom: 0.2em;
+    @include text-reduction;
 }
 
+.ingredients{
+    @include text-reduction;
+    font-size: 0.9em;
+    font-weight: lighter;
+    padding-top: 0.2rem;
+}
+
+
 .price{
-    // background: #99e2d0;
-    // cursor: pointer;
-    // display:flex;
-    // justify-content: center;
-    // align-items: center;
-    font-weight: bold;
-    // transition: transform 1s ease-in-out, width 1s ease-in-out;
+    font-weight: 700;
+    margin-top: auto;
+    padding-left: 0.5em;
 }
 
 .slider{
