@@ -110,34 +110,10 @@
     margin-bottom: 2.5rem;
 }
 
-@mixin dish-layout{
-    padding: 0.5rem 1rem;
-    background-color: white;
-    overflow: hidden;
-    border-radius: 20px;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-    margin-bottom: 1rem;
-    box-shadow: 2px 2px 2px #c9c9c9;
-    cursor: pointer;
-}
-
 @mixin text-reduction{
-
-    .slide{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #99e2d0;
-        color: white;
-        width: 0%;
-        transition: 800ms ease-in-out;
-    }
-    
-    .fa-check-circle{
-        transition: 800ms ease-in-out;
-        transform: rotate(360deg);
-    }
+    white-space: nowrap;
+    text-overflow: ellipsis;            
+    overflow: hidden;
 }
 
 @mixin main-footer{

@@ -96,7 +96,7 @@ a:link {
   }
 }
 .dish-container {
-  padding: 0.5rem 1rem;
+  display: flex;
   background-color: white;
   overflow: hidden;
   border-radius: 20px;
@@ -105,7 +105,53 @@ a:link {
   margin-bottom: 1rem;
   box-shadow: 2px 2px 2px #c9c9c9;
   cursor: pointer;
+}
+.dish-container:hover .slide {
+  width: 60px;
+}
+.dish-container:hover .fa-check-circle {
+  transition: 800ms ease-in-out;
+  transform: rotate(-360deg);
+}
+
+.element-menu-1 {
+  animation: slider 1s forwards;
+}
+
+.element-menu-2 {
+  animation: slider 2s forwards;
+}
+
+.element-menu-3 {
+  animation: slider 3s forwards;
+}
+
+.element-menu-4 {
   animation: slider 4s forwards;
+}
+
+.element-menu-5 {
+  animation: slider 5s forwards;
+}
+
+.element-menu-6 {
+  animation: slider 6s forwards;
+}
+
+.element-menu-7 {
+  animation: slider 7s forwards;
+}
+
+.element-menu-8 {
+  animation: slider 8s forwards;
+}
+
+.element-menu-9 {
+  animation: slider 9s forwards;
+}
+
+.element-menu-10 {
+  animation: slider 10s forwards;
 }
 
 .dish-info {
@@ -116,61 +162,47 @@ a:link {
   width: 100%;
 }
 
-.description .slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #99e2d0;
-  color: white;
-  width: 0%;
-  transition: 800ms ease-in-out;
-}
-.description .fa-check-circle {
-  transition: 800ms ease-in-out;
-  transform: rotate(360deg);
+.description {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .dish-title {
   font-weight: bold;
   padding-bottom: 0.2em;
-}
-.dish-title .slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #99e2d0;
-  color: white;
-  width: 0%;
-  transition: 800ms ease-in-out;
-}
-.dish-title .fa-check-circle {
-  transition: 800ms ease-in-out;
-  transform: rotate(360deg);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .ingredients {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
   font-size: 0.9em;
   font-weight: lighter;
   padding-top: 0.2rem;
-}
-.ingredients .slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #99e2d0;
-  color: white;
-  width: 0%;
-  transition: 800ms ease-in-out;
-}
-.ingredients .fa-check-circle {
-  transition: 800ms ease-in-out;
-  transform: rotate(360deg);
 }
 
 .price {
   font-weight: 700;
   margin-top: auto;
   padding-left: 0.5em;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99e2d0;
+  color: white;
+  width: 0%;
+  transition: width 800ms ease-in-out;
+}
+.slide .fa-check-circle {
+  transition: 800ms ease-in-out;
+  transform: rotate(360deg);
 }
 
 .menu-layout {

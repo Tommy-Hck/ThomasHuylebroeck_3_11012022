@@ -90,8 +90,32 @@ a:link{
 }
 
 .dish-container{
-    @include dish-layout;
-    animation: slider 4s forwards;
+    display: flex;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 2px 2px 2px #c9c9c9;
+    cursor: pointer;
+     &:hover{
+        .slide{
+            width:60px;
+        }
+        .fa-check-circle{
+            transition: 800ms ease-in-out;
+            transform: rotate(-360deg);
+        }
+        
+     }
+     
+}
+
+@for $i from 1 through 10 {
+    .element-menu-#{$i} {
+        animation: slider 1s*$i forwards;
+    }
 }
 
 .dish-info{
@@ -126,21 +150,20 @@ a:link{
     padding-left: 0.5em;
 }
 
-.slider{
-//     width:0;
-//     height: auto;
-//     opacity: 0;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     cursor: pointer;
-//     &:hover{
-//         background: #99e2d0;
-//         transition-property: all;
-// 	    transition-duration: .5s;
-// }
-}
+.slide{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #99e2d0;
+        color: white;
+        width: 0%;
+        transition: width 800ms ease-in-out;
 
+        .fa-check-circle{
+            transition: 800ms ease-in-out;
+            transform: rotate(360deg);
+        }
+}
 
 .menu-layout{
     @include menu-layout;
