@@ -179,6 +179,7 @@ a:link{
 
 .btn-second{
     @include button;
+    @include btn-hover;
     margin-top: auto;
     margin-bottom: 3rem;
 }
@@ -201,4 +202,9 @@ a:link{
 
 .fa-hands-helping{
     @include hands;
+}
+
+#contact{
+    text-decoration: none;
+    color: white;
 }
