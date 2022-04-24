@@ -31,7 +31,10 @@ a:link{
 }
 
 .fa-arrow-left{
-    @include arrow-property;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
 }
 
 .picture{

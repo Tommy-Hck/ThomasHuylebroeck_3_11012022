@@ -60,6 +60,7 @@ body{
     padding: 17px;
 }
 
+
 // FIN DU LOADER
 
 
@@ -301,4 +302,9 @@ body{
 
 .fa-hands-helping{
     @include hands;
+}
+
+#contact{
+    text-decoration: none;
+    color: white;
 }
