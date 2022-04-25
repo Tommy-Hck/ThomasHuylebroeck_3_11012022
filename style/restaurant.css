@@ -234,6 +234,7 @@ a:link {
   cursor: pointer;
   transition-duration: 0.15s;
   box-shadow: 0.25rem 0.25rem 0.25rem #9356DC;
+  background-color: lighten #9356DC, 40%;
 }
 
 #main-footer {
