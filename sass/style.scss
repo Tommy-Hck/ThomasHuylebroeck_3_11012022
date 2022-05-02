@@ -29,8 +29,8 @@ body{
     justify-content: center;
     align-items: center;
     transition: 1s ease-in-out;
-    animation: fadeout 0.25s 3s forwards;
-}
+    animation: fadeout 0.25s 3s forwards;      
+    }
 
 @keyframes loader{
     100% {
@@ -100,6 +100,9 @@ body{
 
 .btn{
     @include flex-ctr;
+    &:hover{
+        background: $secondary;
+    }
 }
 
 

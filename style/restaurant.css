@@ -37,6 +37,10 @@ a:link {
   width: 100%;
 }
 
+.note-picture {
+  object-fit: cover;
+}
+
 #menu {
   position: relative;
   background-color: #eaeaea;
@@ -232,9 +236,12 @@ a:link {
 }
 .btn-second:hover {
   cursor: pointer;
-  transition-duration: 0.15s;
   box-shadow: 0.25rem 0.25rem 0.25rem #9356DC;
-  background-color: lighten #9356DC, 40%;
+  background-color: #9e67e0;
+  background-color: #ff8de0;
+}
+.btn-second:hover {
+  background: #FF79DA;
 }
 
 #main-footer {

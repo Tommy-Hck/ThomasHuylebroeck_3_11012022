@@ -41,6 +41,10 @@ a:link{
     width: 100%;
 }
 
+.note-picture{
+    object-fit:cover;
+}
+
 #menu{
     position: relative;
     background-color: #eaeaea;
@@ -182,6 +186,9 @@ a:link{
     @include btn-hover;
     margin-top: auto;
     margin-bottom: 3rem;
+    &:hover{
+        background: $secondary;
+    }
 }
 
 #main-footer{

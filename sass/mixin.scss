@@ -30,9 +30,9 @@
     
     &:hover{
         cursor:pointer;
-        transition-duration: .15s;
         box-shadow: 0.25rem 0.25rem 0.25rem $primary;
-        background-color: lighten ($primary, 40%);
+        background-color: lighten($color: $primary, $amount: 4%);
+        background-color: lighten($color: $secondary, $amount: 4%);
         }
 }
 
