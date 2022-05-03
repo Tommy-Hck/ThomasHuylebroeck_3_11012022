@@ -66,7 +66,6 @@ a:link {
 
 .starter-title {
   padding: 0rem 1rem;
-  margin-top: 1rem;
 }
 
 .starter-border {
@@ -207,6 +206,10 @@ a:link {
 .slide .fa-check-circle {
   transition: 800ms ease-in-out;
   transform: rotate(360deg);
+}
+
+.dessert-title {
+  margin-top: 3rem;
 }
 
 .menu-layout {

@@ -32,6 +32,16 @@ body{
     animation: fadeout 0.25s 3s forwards;      
     }
 
+    @media  (max-width:767px){
+        #loader-container{
+            display: flex;
+            flex-direction: column;
+        }
+        .letter{
+            font-size: auto;
+        }
+    }
+
 @keyframes loader{
     100% {
         transform: translateY(-30px);
