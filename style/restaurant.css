@@ -239,9 +239,8 @@ a:link {
 }
 .btn-second:hover {
   cursor: pointer;
-  box-shadow: 0.25rem 0.25rem 0.25rem #9356DC;
-  background-color: #9e67e0;
-  background-color: #ff8de0;
+  box-shadow: 0.25rem 0.25rem 0.25rem #5351518f;
+  background: linear-gradient(160deg, #fface8, #ae80e5);
 }
 .btn-second:hover {
   background: #FF79DA;
