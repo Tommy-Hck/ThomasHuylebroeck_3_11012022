@@ -18,6 +18,11 @@ a:link{
     padding-top: 1.5rem;
     padding-bottom: 1rem;
     background-color: white;
+    width: 100%;
+}
+
+.note-logo{
+    position: fixed;
 }
 
 #img-logo{
@@ -42,7 +47,21 @@ a:link{
 }
 
 .note-picture{
-    object-fit:cover;
+    margin-top: -1.4rem;
+}
+
+#note-menu{
+    position: relative;
+    background-color: #eaeaea;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-top: -9.4rem;
+
+    &-title{
+    font-family: shrikhand;
+    font-weight: lighter;
+    margin-top: 2rem;
+    }
 }
 
 #menu{

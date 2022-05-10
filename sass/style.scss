@@ -57,7 +57,7 @@ body{
     background-clip: text;
     color: transparent;
     animation: loader infinite 0.3s alternate;
-    // font-size: 5rem;
+    font-size: 5rem;
     padding: 17px;
 }
 
@@ -106,7 +106,7 @@ body{
 }
 
 
-.btn{
+.btn-second{
     @include flex-ctr;
     &-second:hover{
         background: $secondary;
@@ -137,12 +137,9 @@ body{
     opacity: 0.6;
 }
 
-.btn{
-    @include btn-hover;
-}
-
 .btn-second{
     @include button;
+    @include btn-hover;
 }
 
 

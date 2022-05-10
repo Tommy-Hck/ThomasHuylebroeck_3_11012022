@@ -52,6 +52,7 @@ body {
   background-clip: text;
   color: transparent;
   animation: loader infinite 0.3s alternate;
+  font-size: 5rem;
   padding: 17px;
 }
 
@@ -119,11 +120,11 @@ body {
   padding-left: 5rem;
 }
 
-.btn {
+.btn-second {
   display: flex;
   justify-content: center;
 }
-.btn-second:hover {
+.btn-second-second:hover {
   background: #FF79DA;
 }
 
@@ -149,12 +150,6 @@ body {
   opacity: 0.6;
 }
 
-.btn:hover {
-  cursor: pointer;
-  box-shadow: 0.25rem 0.25rem 0.25rem #5351518f;
-  background: linear-gradient(160deg, #fface8, #ae80e5);
-}
-
 .btn-second {
   border-bottom-left-radius: 20rem;
   border-bottom-right-radius: 20rem;
@@ -166,6 +161,11 @@ body {
   margin-top: 1.5rem;
   background: linear-gradient(160deg, #FF79DA, #9356DC);
   color: white;
+}
+.btn-second:hover {
+  cursor: pointer;
+  box-shadow: 0.25rem 0.25rem 0.25rem #5351518f;
+  background: linear-gradient(160deg, #fface8, #ae80e5);
 }
 
 #menu {
