@@ -36,9 +36,10 @@ body{
         #loader-container{
             display: flex;
             flex-direction: column;
+            width: 100%;
         }
         .letter{
-            font-size: auto;
+            font-size: 3.2rem;
         }
     }
 
@@ -49,13 +50,15 @@ body{
 }
 
 .letter{
+    font-family: shrikhand;
     background-image: linear-gradient(180deg, $secondary, $primary);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
     color: transparent;
     animation: loader infinite 0.3s alternate;
-    font-size: 5rem;
+    // font-size: 5rem;
+    padding: 17px;
 }
 
 @for $i from 1 through 8 {
@@ -64,11 +67,6 @@ body{
     }
 }
 
-
-.letter{
-    font-family: shrikhand;
-    padding: 17px;
-}
 
 
 // FIN DU LOADER
@@ -110,7 +108,7 @@ body{
 
 .btn{
     @include flex-ctr;
-    &:hover{
+    &-second:hover{
         background: $secondary;
     }
 }
